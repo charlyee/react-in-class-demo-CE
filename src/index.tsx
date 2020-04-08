@@ -3,15 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Something from './Something';
-import { Button, Icon, Label } from 'semantic-ui-react';
 
 ReactDOM.render(
   <React.StrictMode>
-   <App/>
-   <button>
-     Button!
-   </button>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
