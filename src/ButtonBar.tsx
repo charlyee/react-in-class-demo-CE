@@ -4,7 +4,7 @@ import SampleButton from './SampleButton';
 export interface IButtonBarProps {
 }
 
-export default class ButtonBar extends React.Component<IButtonBarProps> {
+export class ButtonBar extends React.Component<IButtonBarProps> {
     public render() {
         return (
             <React.Fragment>

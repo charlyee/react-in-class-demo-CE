@@ -1,25 +1,26 @@
-import * as React from 'react';
+import * as React from 'react'; //Import statement.
+import Something from './Something';
 
+//INTERFACE: "Contract" to use the component is specified here.
 export interface IPersonProps {
-    name: string;
+    name?: string | undefined;
     callbackMethod: (callbackString: string) => string;
 }
 
-
 export default class Person extends React.Component<IPersonProps> {
 
-    public greeting (): string {
+    public greeting(): string {
         return "hello!";
     }
 
     public render() {
         let { name, callbackMethod } = this.props;
+
         return (
-            <h1>{this.greeting()}</h1>
-            // <React.Fragment>
-            //     {name}
-            //     {callbackMethod(":)")}
-            // </React.Fragment>
+            <React.Fragment>
+                {name}
+                {callbackMethod(":))")}
+            </React.Fragment>
         );
     }
 }

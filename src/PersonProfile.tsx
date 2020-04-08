@@ -1,5 +1,6 @@
 import * as React from 'react'; //Import statements. Baseline imports
 //react from the react node_module folder.
+import './PersonProfile.css';
 
 //Contract between what this component (PersonProfile) will expect other 
 //components that use this component to provide to this component.
@@ -13,7 +14,11 @@ export interface IPersonProfileProps {
 export default class PersonProfile extends React.Component<IPersonProfileProps> {
     public render() {
         return (
-            <h1>Person Name</h1>
+            <React.Fragment>
+                <h1>Person Name</h1>
+                <h1>Person Birthday</h1>
+                <h1>Person Pet Name</h1>
+            </React.Fragment>
         );
     }
 
