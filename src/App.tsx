@@ -14,7 +14,7 @@ let propsExampleFunction = (input: string): string => {
   return `The answer is 42 ${input}`;
 }
 
-function App() {
+export default function App() {
   return (
     <Fragment>
       <Person name="John Doe" callbackMethod={propsExampleFunction}/>
@@ -26,13 +26,6 @@ function App() {
 //   name: string;
 //   callbackMethod: (callbackString: string) => string;
 // }
-
-export default App;
-
-
-
-
-
 
     // <Fragment>
     //   <Person name="John Doe" callbackMethod={propsExampleFunction} />
