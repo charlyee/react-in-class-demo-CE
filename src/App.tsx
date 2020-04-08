@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Something from './Something';
@@ -7,7 +7,7 @@ import LikeButton from './LikeButton';
 function App() {
 
   return (
-    <Fragment>
+    <React.Fragment>
       <Fragment>
         <Fragment>
           <h1>This is a header!</h1>
@@ -24,7 +24,7 @@ function App() {
           <p>Proof!</p>
         </Fragment>
       </Fragment>
-    </Fragment>
+    </React.Fragment>
   );
 
 
